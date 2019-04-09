@@ -1,0 +1,19 @@
+<!--pages/user/user.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">联系人：{{name}}\n</text>
+    <text class="user-motto">手机号：{{phone}}</text>
+    <button bindtap='changinformation'>修改信息</button>
+    <modal title="紧急联系人修改" cancle-text="取消修改" confirm-text="确认" hidden="{{mHidden}}" bindconfirm="changeModel" bindcancel="modelCancel">
+    <text>姓名：</text><input class="input" name="enmname" placeholder="{{name}}" bindinput='enmnameinput'></input>
+    <text>手机：</text><input class='input' name="enmphone" placeholder='{{phone}}' bindinput='enmphoneinput'></input>
+    </modal>
+  </view>
+</view>

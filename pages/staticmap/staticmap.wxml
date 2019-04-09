@@ -1,0 +1,6 @@
+<view class="img_box">
+  <image src="{{src}}" bindtap="previewImage"></image>
+</view>
+<view class = "delete {{editTrue?'isRuleShow':'isRuleHide'}}">
+<button tyep='primary' bindtap='getstaticmap'>获取骑行路线</button>
+</view>

@@ -1,0 +1,9 @@
+<!--pages/url/url.wxml-->
+<view class='empty_tip'>
+<view class="map_container">
+  <map class="map" id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="16" markers="{{markers}}"></map>  
+</view>
+<view class="map_text">
+    <text class="h1">当前位置：{{textData.name}}{{textData.desc}}</text>
+</view>
+</view>

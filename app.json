@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/maptest/maptest",
+    "pages/url/url",
+    "pages/user/user",
+    "pages/staticmap/staticmap",
+    "pages/live/live"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#ffb5a1",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "pagePath": "pages/url/url",
+        "text": "地图",
+        "iconPath": "images/map.png",
+        "selectedIconPath": "images/map-1.png"
+      },
+      {
+        "pagePath": "pages/staticmap/staticmap",
+        "text": "路线",
+        "iconPath": "images/route.png",
+        "selectedIconPath": "images/route01.png"
+      },
+      {
+        "pagePath": "pages/live/live",
+        "text": "直播",
+        "iconPath": "images/live.png",
+        "selectedIconPath": "images/live-1.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "用户",
+        "iconPath": "images/user.png",
+        "selectedIconPath": "images/user-change.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}
