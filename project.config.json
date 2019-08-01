@@ -12,7 +12,7 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.6.4",
-	"appid": "wx3ea6bc432f5711b9",
+	"appid": "",  //此处填写自己ID
 	"projectname": "smart",
 	"debugOptions": {
 		"hidedInDevtools": []
