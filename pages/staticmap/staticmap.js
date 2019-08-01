@@ -27,7 +27,7 @@ Page({
 
 getstaticmap: function () {
   var that = this;
-  var myAmapFun = new amapFile.AMapWX({ key: "bb30de5a0f66cc3fbed95429bebb0dee" });
+  var myAmapFun = new amapFile.AMapWX({ key: "" });//填写自己的KEY
   wx.getSystemInfo({
     success: function (data) {
       var height = data.windowHeight;
